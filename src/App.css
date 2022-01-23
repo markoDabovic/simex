@@ -12,10 +12,9 @@ select {
     1px 1px 0 #000; */
   background-image: url("../src/images/simextas.jpg");
   background-size: cover;
-  height: 87vh;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 100px;
+  padding-top: 20px;
   text-align: center;
   overflow: hidden;
   display: flex;
