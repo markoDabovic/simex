@@ -1,0 +1,28 @@
+select {
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.App {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-image: url("../src/images/pipe1.png");
+  background-size: cover;
+  height: 87vh;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App h1 {
+  opacity: 100;
+  z-index: 5;
+}
