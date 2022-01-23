@@ -6,8 +6,8 @@ select {
 }
 
 .App {
-  color: rgb(0, 0, 0);
-  text-shadow: 4px 4px 4px rgb(197, 193, 193);
+  color: rgb(255, 255, 255);
+  text-shadow: -4px 4px 4px rgb(0, 0, 0);
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000; */
   background-image: url("../src/images/simextas.jpg");

@@ -53,7 +53,7 @@ function App() {
     <div className="App">
       <div>
         <div>
-          <h1>Unesite prečnik cevi u centimetrima:</h1>
+          <h1>Unesite prečnik cevi u cm:</h1>
           <select onChange={(e) => izmenaPrecnika(e)}>
             <option value="10">10</option>
             <option value="11">11</option>
@@ -72,7 +72,7 @@ function App() {
             <option value="24">24</option>
             <option value="25">25</option>
           </select>
-          <h1>Unesite ukupan preklop cevi u centimetrima:</h1>
+          <h1>Unesite ukupan preklop cevi u cm:</h1>
           <select onChange={(e) => izmenaPreklop(e)}>
             <option value="2">2</option>
             <option value="3" selected="selected">
@@ -93,12 +93,12 @@ function App() {
             Kalkulator težine aluminijumskog lima - referentna legura Al 1050
             težine 2.705 g/cm<sup>3</sup>
           </h1>
-          <h1>Izaberite širinu aluminijumske table/rolne u milimetrima:</h1>
+          <h1>Izaberite širinu aluminijumske table/rolne u mm:</h1>
           <select onChange={(e) => izmenaSirine(e)}>
             <option value="1000">1000</option>
             <option value="1250">1250</option>
           </select>
-          <h1>Izaberite debljinu aluminijumske table/rolne u milimetrima:</h1>
+          <h1>Izaberite debljinu aluminijumske table/rolne u mm:</h1>
           <select onChange={(e) => izmenaDebljine(e)}>
             <option value="0.5">0.5</option>
             <option value="0.6">0.6</option>
@@ -111,10 +111,18 @@ function App() {
           </select>
           <h1>Unesite dužinu aluminijumske table/rolne u milimetrima:</h1>
           <input onChange={(e) => izmenaDuzine(e)} />
-          <h1>
+          {/* <h1>
             Težina zadate table lima iznosi: {(rez2 / 1000000).toFixed(3)}{" "}
             kilograma.
-          </h1>
+          </h1> */}
+          {!isNaN(rez2) ? (
+            <h1>
+              Težina zadate table lima iznosi: {(rez2 / 1000000).toFixed(3)}{" "}
+              kilograma.
+            </h1>
+          ) : (
+            <h1>Unesite ispravan broj u milimetrima!</h1>
+          )}
           <hr />
         </div>
       </div>
@@ -122,7 +130,7 @@ function App() {
         <h2>
           Simex TAS doo, termoizolacija mineralnom vunom i limom, 14253 Osečina{" "}
         </h2>
-        <h4>Zastupnik i kontakt telefon: Dimitrije Simić, +381 63 882 60 27</h4>
+        <h4>Zastupnik i kontakt telefon: Dimitrije Simić +381 63 882 60 27</h4>
       </div>
     </div>
   );
