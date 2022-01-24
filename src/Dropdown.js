@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Dropdown(props) {
   const opcije = props.lista.map((el, index) => {

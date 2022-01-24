@@ -13,14 +13,7 @@ import {
 } from "./styles/Navbar.style";
 import "./KalkulacijaDuzineTable";
 import LogoImg from "./images/simextas.jpg";
-import {
-  Routes,
-  Route,
-  Outlet,
-  Link,
-  useMatch,
-  useResolvedPath,
-} from "react-router-dom";
+import { useMatch, useResolvedPath } from "react-router-dom";
 
 export default function NavBarComp() {
   const [extendNavbar, setExtendNavbar] = useState(false);
