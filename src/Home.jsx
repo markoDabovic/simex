@@ -36,6 +36,7 @@ function App() {
 
   const izmenaDebljine = (e) => {
     setDebljina(parseFloat(e.target.value));
+    console.log(parseFloat(e.target.value));
 
     rez2Funk(sirina, parseFloat(e.target.value), duzina);
   };
@@ -46,6 +47,7 @@ function App() {
   };
 
   const rez2Funk = (s, deb, duz) => {
+    console.log(s, deb, duz);
     setRez2(s * deb * duz * 2.705);
   };
 
@@ -104,7 +106,9 @@ function App() {
             <option value="0.5">0.5</option>
             <option value="0.6">0.6</option>
             <option value="0.7">0.7</option>
-            <option value="0.8">0.8</option>
+            <option value="0.8" selected="selected">
+              0.8
+            </option>
             <option value="0.9">0.9</option>
             <option value="1.0">1.0</option>
             <option value="1.1">1.1</option>

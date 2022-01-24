@@ -16,4 +16,6 @@ export const sirinaAluTable = [
 export const debljinaAluTable = [
   { vrednost: "0.5", ispis: "0.5" },
   { vrednost: "0.6", ispis: "0.6" },
+  { vrednost: "0.7", ispis: "0.7" },
+  { vrednost: "0.8", ispis: "0.8", selected: true },
 ];

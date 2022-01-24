@@ -8,7 +8,7 @@ import TextField from "@mui/material/TextField";
 
 export default function KalkulacijaTezineTable() {
   const [sirina, setSirina] = useState(1000);
-  const [debljina, setDebljina] = useState(0.5);
+  const [debljina, setDebljina] = useState(0.8);
   const [duzina, setDuzina] = useState(0);
   const [rezultat, setRezultat] = useState(0);
 
@@ -59,9 +59,9 @@ export default function KalkulacijaTezineTable() {
       </div>
       <div className="rezultatText">
         {rezultat > 0 &&
-          `${`Težina zadate table lima iznosi: ${rezultat.toFixed(
+          `${`Težina zadate table lima iznosi: ${(rezultat / 1000000).toFixed(
             3
-          )} kilograma.`}`}
+          )}  kilograma.`}`}
       </div>
     </div>
   );
