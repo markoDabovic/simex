@@ -1,0 +1,28 @@
+.ukupnaSumaButton {
+  margin-top: 20px;
+}
+
+.rezultatText {
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+select {
+  width: 100px;
+  height: 40px;
+}
+
+.active {
+  color: red;
+}
